@@ -1,16 +1,25 @@
+const webpack = require('webpack');
 const port = '8080'
 
 module.exports = {
+    debug: true,
+    devtool: 'eval',
+    plugins: [
+      new webpack.HotModuleReplacementPlugin(),
+      new webpack.NoErrorsPlugin(),
+    ],
     entry: [
       'webpack-dev-server/client?http://0.0.0.0:' + port,
+      'webpack/hot/dev-server',
       "./app/app.js",
+      "./app/styles/styles.css"
     ],
     module: {
         loaders: [
             {
               test: /\.css$/,
               include: __dirname + '/app',
-              loaders: "style!css"
+              loader: "style-loader!css-loader"
             },
             {
               test: /\.js$/,
@@ -27,6 +36,6 @@ module.exports = {
       contentBase: './dist',
       noInfo: true,
       inline: true,
-      hot: false
+      hot: true
     }
 };
