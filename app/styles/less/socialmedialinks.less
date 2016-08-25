@@ -1,0 +1,32 @@
+#socialMediaLinks {
+    padding: 0 1em 0 .5em;
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+    i {
+      color: white;
+      height: 1em;
+      width: 1em;
+    }
+    div {
+      margin-left: .5em;
+        text-align: center;
+        background-color: inherit;
+        border-radius: 50%;
+        border: 2px solid #ecf0f1;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        // Variable with media
+        padding: .5em;
+        @media @mobile {
+          padding: 1em;
+        }
+    }
+    div:hover {
+        background-color: #2098d1;
+    }
+
+}

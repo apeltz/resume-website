@@ -37,7 +37,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id='wrapper'>
                 <SideNav changeView={this.changeView.bind(this)}/>
                 <div id="content" className="animated fadeIn">
                     <h2 id="sectionTitle">{this.state.sectionTitle}</h2>
