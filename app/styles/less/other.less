@@ -1,5 +1,5 @@
 * {
-    /*border: green solid 2px;*/
+    border: green solid 2px;
 }
 body {
     width: 95%;
@@ -10,14 +10,13 @@ body {
     font-family: sans-serif;
 }
 div {
-    display: inline-block;
     margin: 0;
     padding: 0;
     background-color: #ecf0f1;
     text-align: justify;
 }
 #container {
-    width: 1000px;
+    display: flex;
 }
 #nametitlebar {
     position: absolute;
@@ -28,14 +27,14 @@ div {
 #sidebar {
     display: inline-block;
     width: 250px;
-    height: 100%;
     margin: 10px 10px auto auto;
+    padding: 0 0 20px 0;
     color: #ecf0f1;
     background-color: #33373d;
 }
 #sidebar #profilepic {
-    height: 150px;
-    width: 150px;
+    height: auto;
+    width: 100%;
     font-size: 2em;
 }
 #sidebar ul {
@@ -48,7 +47,7 @@ div {
 }
 #sidebar i {
     font-size: 1.5em;
-    text-align: left;
+    margin: auto;
 }
 #sidebar span {
     float: right;
@@ -60,7 +59,7 @@ div {
 }
 #socialMediaLinks td {
     width: .5em;
-    height: 2.5em;
+    height: 2.6em;
     text-align: center;
     color: #ecf0f1;
     border-radius: 50%;

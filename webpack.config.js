@@ -12,14 +12,14 @@ module.exports = {
       'webpack-dev-server/client?http://0.0.0.0:' + port,
       'webpack/hot/dev-server',
       "./app/app.js",
-      "./app/styles/styles.css"
+      "./app/styles/styles.less"
     ],
     module: {
         loaders: [
             {
-              test: /\.css$/,
+              test: /\.less$/,
               include: __dirname + '/app',
-              loader: "style-loader!css-loader"
+              loader: "style-loader!css-loader!less-loader"
             },
             {
               test: /\.js$/,

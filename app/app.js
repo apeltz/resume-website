@@ -1,7 +1,7 @@
 "use strict"
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SideNav from './components/sidenav';
+import SideNav from './components/SideNav';
 import About from './components/about';
 import Portfolio from './components/portfolio';
 import Resume from './components/resume';
