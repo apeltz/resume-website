@@ -6,12 +6,16 @@
 @standard: ~"screen and (min-width: 600px)";
 
 body {
-    width: 95%;
+    width: 85%;
     margin: auto;
     margin-top: 20px;
     background: #ecf0f1;
     text-align: center;
     font-family: sans-serif;
+    @media @mobile {
+      width: 100%;
+      margin-top: 0;
+    }
 }
 div {
     margin: 0;
