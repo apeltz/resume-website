@@ -9,16 +9,16 @@ export default class SocialMediaLinks extends React.Component {
     render() {
         return (
           <div id="socialMediaLinks">
-              <a target="_blank" href="https://www.linkedin.com/in/apeltz">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/apeltz">
               <div><i className="fa fa-linkedin"></i></div>
               </a>
-              <a target="_blank" href="https://www.github.com/apeltz">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/apeltz">
               <div><i className="fa fa-github"></i></div>
               </a>
-              <a target="_blank" href="https://www.facebook.com/aaron.peltz">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/aaron.peltz">
               <div><i className="fa fa-facebook"></i></div>
               </a>
-              <a target="_blank" href="https://www.twitter.com/AaronPeltz">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/AaronPeltz">
               <div><i className="fa fa-twitter"></i></div>
               </a>
           </div>
