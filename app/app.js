@@ -13,7 +13,7 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            sectionTitle: 'About'
+            mobile: () => window.matchMedia('(max-width: 599px)'),
         }
         this.views = {
             'About': <About/>,
@@ -25,24 +25,28 @@ class App extends React.Component {
     }
 
     changeView(e) {
-        $('#content').removeClass("animated fadeIn");
-        // console.log('e.target:', $(e.target).closest('li')[0].dataset.section);
-        var section = $(e.target).closest('li')[0].dataset.section;
-        this.setState({sectionTitle: section});
-        setTimeout(function(){
-          $('#content').addClass("animated fadeIn");
-        },0);
-
+        let sectionNode = e.target.closest('li');
+        let collapseable = sectionNode.getElementsByClassName('collapseable')[0]
+        if(this.state.mobile().matches) {
+          collapseable.classList.toggle('hidden')
+        }
+        else {
+          if(collapseable.classList.contains('hidden')){
+            let allCollapseable = document.getElementsByClassName('collapseable')
+            for(let n=0; n<allCollapseable.length; n++) {
+              allCollapseable[n].classList.add('hidden')
+              collapseable.classList.remove('hidden')
+            }
+          }
+        }
     }
 
     render() {
         return (
             <div id='wrapper'>
-                <SideNav changeView={this.changeView.bind(this)}/>
-                <div id="content" className="animated fadeIn">
-                    <h2 id="sectionTitle">{this.state.sectionTitle}</h2>
-                    {this.views[this.state.sectionTitle]}
-                </div>
+                <SideNav
+                mobile={this.state.mobile}
+                changeView={this.changeView.bind(this)} views={this.views}/>
             </div>
         )
     }

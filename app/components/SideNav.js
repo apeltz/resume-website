@@ -13,7 +13,9 @@ export default class SideNav extends React.Component {
             <div id="sidebar">
                 <h1 id="nametitlebar">AARON PELTZ</h1>
                 <img id="profilepic" src="./assets/placeholderheadshot.png"></img>
-                <SideNavList changeView={this.props.changeView}/>
+                <SideNavList
+                 mobile={this.props.mobile}
+                 changeView={this.props.changeView} views={this.props.views}/>
                 <SocialMediaLinks />
             </div>
         )
