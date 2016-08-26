@@ -32,40 +32,37 @@
   }
 }
 
-#sidebar {
-    margin: 0 10px auto auto;
-    padding: 0 0 20px 0;
-    color: #ecf0f1;
+#sidenav {
+    margin:0 1em auto auto;
+    padding: 0;
     @media @mobile {
-      width: 100%;
+      margin: 0;
     }
-    ul {
+    .sidenav-ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
     }
-    li {
+    .sidenav-li {
         width: 100%;
         margin: 0;
         border-top: 1px solid gray;
+
         div.sectionHeader {
+          color: #ecf0f1;
           background-color: #33373d;
           padding: .5em 1em .5em 1em;
         }
         div.sideNavContent {
-          color: black;
           @media @standard {
             display: none;
           }
           p {
-              margin: 0;
-              background-color: white;
-              color: #696969;
-              font-size: .9em;
+            margin: 0;
           }
         }
     }
-    li:last-child {
+    .sidenav-li:last-child {
       border-bottom: 1px solid gray;
     }
     i {

@@ -20,6 +20,7 @@ export default class SideNavList extends React.Component {
           let className = () => i ? ' hidden': '';
           return (
               <li
+                className='sidenav-li'
                 key={'sidenav-list-item-'+i}
                 onClick={this.props.changeView}
                 data-section={sectionTitle}
@@ -36,7 +37,7 @@ export default class SideNavList extends React.Component {
         });
 
         return (
-          <ul>
+          <ul className='sidenav-ul'>
             {listItemsToDOM}
           </ul>
         )

@@ -10,7 +10,7 @@ export default class SideNav extends React.Component {
 
     render() {
         return (
-            <div id="sidebar">
+            <div id="sidenav">
                 <div id='img-section'>
                   <h1 id="nametitlebar">AARON PELTZ</h1>
                   <img id="profilepic" src="./assets/ap22.png"></img>
