@@ -11,9 +11,9 @@ export default class ResumeExperience extends React.Component {
     return (
       <div id='res-projects'>
 
-        <div>
-        <p className='res-co'>Salem Partners, LLC - </p>
-        <p className='res-role'>Associate, Investment Banking</p>
+        <div className='res-subhead'>
+        <p className='res-title'>Salem Partners, LLC - </p>
+        <p className='res-desc'>Associate, Investment Banking</p>
         <p className='res-date'>2011-2016</p>
         </div>
         <ul>
@@ -24,9 +24,9 @@ export default class ResumeExperience extends React.Component {
         </ul>
 
 
-        <div>
-        <p className='res-co'>Houlihan Lokey - </p>
-        <p className='res-role'>Analyst, Investment Banking</p>
+        <div className='res-subhead'>
+        <p className='res-title'>Houlihan Lokey - </p>
+        <p className='res-desc'>Analyst, Investment Banking</p>
         <p className='res-date'>2010-2011</p>
         </div>
         <ul>

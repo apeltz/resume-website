@@ -35,6 +35,7 @@
 #sidenav {
     margin:0 1em auto auto;
     padding: 0;
+    background-color: white;
     @media @mobile {
       margin: 0;
     }
@@ -53,14 +54,6 @@
           background-color: #33373d;
           padding: .5em 1em .5em 1em;
         }
-        div.sideNavContent {
-          @media @standard {
-            display: none;
-          }
-          p {
-            margin: 0;
-          }
-        }
     }
     .sidenav-li:last-child {
       border-bottom: 1px solid gray;
@@ -74,4 +67,29 @@
     span {
         float: right;
     }
+}
+
+div.sideNavContent {
+     
+  @media @standard {
+    display: none;
+  }
+  p {
+    margin: 0;
+    padding: .5em 1em .5em 1em;
+  }
+  li {
+    padding: .5em 0 .5em 0;
+  }
+  p:first-child, li:first-child {
+    padding-top: 1em;
+  }
+  p:last-child, li:last-child {
+    padding-bottom: 1em;
+  }
+  div.res-subhead {
+    p {
+      padding: 0 .5em 0 .5em;
+    }
+  }
 }

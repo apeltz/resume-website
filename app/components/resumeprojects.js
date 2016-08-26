@@ -11,7 +11,7 @@ export default class ResumeProjects extends React.Component {
     return (
       <div id='res-projects'>
 
-        <div>
+        <div className='res-subhead'>
         <p className='res-title'>Sabertooth - </p>
         <p className='res-desc'>Javascript library</p>
         </div>
@@ -25,9 +25,9 @@ export default class ResumeProjects extends React.Component {
         </ul>
 
 
-        <div>
-        <p className='res-co'>ElephantCards - </p>
-        <p className='res-role'>Flashcard deck web platform</p>
+        <div className='res-subhead'>
+        <p className='res-title'>ElephantCards - </p>
+        <p className='res-desc'>Flashcard deck web platform</p>
         </div>
         <ul>
           <li>Used AngularJS to create multi-view single-page flashcard application with PosgresSQL-stored user-created content
