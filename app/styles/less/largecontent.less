@@ -9,46 +9,20 @@
       font-size: 1.5em;
       font-family: 'Permanent Marker', cursive;
   }
-  p {
+  p, li {
       margin: 0;
+      padding: .5em 1em .5em 1em;
       background-color: white;
-      padding: 1em 1em 0 1em;
       color: #696969;
       font-size: .9em;
   }
-  p:last-child {
+  p:first-child, li:first-child {
+    padding-top: 1em;
+  }
+  p:last-child, li:last-child {
     padding-bottom: 1em;
   }
   @media @mobile {
     display: none;
   }
-}
-// Responsive grid
-.responsive-grid {
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: .5em;
-
-  .oneOfOne, .oneOfMany {
-    padding: 0 .5em 0 .5em;
-    margin: .5em;
-
-  }
-  background-color: white;
-  .oneOfOne {
-    background-color: lightblue;
-    flex-basis: 100%;
-  }
-  .oneOfMany {
-    background-color: lightgoldenrodyellow;
-    flex-grow: 1;
-    text-align: center;
-    bottom: 0;
-  }
-}
-h3 {
-  margin: 0;
 }

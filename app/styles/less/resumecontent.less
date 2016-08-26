@@ -1,0 +1,95 @@
+
+#resume {
+  padding: 1em;
+  background-color: white;
+
+  h3 {
+    margin: 0;
+    padding: 0 .5em 0 .5em;
+    font-size: 1em;
+    color: #037A76;
+    border-bottom: 1px solid #037A76;
+  }
+  p {
+    padding: .5em;
+  }
+}
+
+
+#res-skills {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  .skill-logo {
+    margin: .5em .5em 0 .5em;
+    background-color: lightgoldenrodyellow;
+    flex: 1;
+    text-align: center;
+    img {
+      height: 2em;
+    }
+    p {
+      padding: 0;
+    }
+  }
+}
+
+#res-experience, #res-projects, #res-education {
+  div {
+    margin-top: .5em;
+    background-color: #818F87;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4eaaa4+22,a7e5d4+75,73cec8+100 */
+background: #4eaaa4; /* Old browsers */
+background: -moz-linear-gradient(left,  #4eaaa4 22%, #a7e5d4 75%, #73cec8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #4eaaa4 22%,#a7e5d4 75%,#73cec8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #4eaaa4 22%,#a7e5d4 75%,#73cec8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4eaaa4', endColorstr='#73cec8',GradientType=1 ); /* IE6-9 */
+
+    p {
+      color: white;
+    }
+    p:last-child {
+      padding-right: .5em;
+    }
+    p:first-child, li:first-child {
+      padding-top: 0;
+    }
+    p:last-child, li:last-child {
+      padding-bottom: 0;
+    }
+  }
+  p {
+    padding: 0 0 0 .5em;
+    display: inline-block;
+    background-color: inherit;
+  }
+  .res-title {
+    font-weight: bold;
+  }
+  .res-desc {
+    font-style: italic;
+  }
+  .res-date {
+    float: right;
+  }
+  ul {
+    margin: 0 .5em 0 1.5em;
+    padding: 0;
+  }
+  li {
+    padding: .2em 0 0 0;
+    font-size: .8em;
+  }
+}
+#res-education {
+  padding: .5em 0 .5em 0;
+  line-height: 2em;
+  img {
+    height: 2em;
+    width: 2em;
+    float: left;
+  }
+}
