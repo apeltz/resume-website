@@ -22,9 +22,13 @@ module.exports = {
               loader: "style-loader!css-loader!less-loader"
             },
             {
+              test: /\.(png|jpg|)$/,
+              loader: 'url-loader?limit=200000'
+            },
+            {
               test: /\.js$/,
               include: __dirname + '/app',
-              loaders: ['babel'],
+              loaders: ['babel']
             }
         ]
     },

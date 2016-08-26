@@ -11,10 +11,11 @@ export default class SideNav extends React.Component {
     render() {
         return (
             <div id="sidebar">
-                <h1 id="nametitlebar">AARON PELTZ</h1>
-                <img id="profilepic" src="./assets/placeholderheadshot.png"></img>
+                <div id='img-section'>
+                  <h1 id="nametitlebar">AARON PELTZ</h1>
+                  <img id="profilepic" src="./assets/ap22.png"></img>
+                </div>
                 <SideNavList
-                 mobile={this.props.mobile}
                  changeView={this.props.changeView} views={this.props.views}/>
                 <SocialMediaLinks />
             </div>

@@ -1,16 +1,36 @@
-#nametitlebar {
-    display: block;
-    position: absolute;
-    vertical-align: top;
-    margin: 0px 0px 0px 0px;
-    padding: 2px 10px 2px 10px;
-    color: white;
-    font-size: 1.6em;
-    @media @mobile {
-      position: relative;
-      background-color: #2098d1;
-    }
+#img-section {
+  text-align: center;
+  position: relative;
+  #nametitlebar {
+      position: absolute;
+      padding-left: 1.5em;
+      margin: 0;
+      font-family: 'Permanent Marker', cursive;
+      color: white;
+      font-size: 2em;
+      text-shadow: 0px 0px 30px rgba(17, 17, 17, 1);
+      @media @mobile {
+        padding: 0 0 .2em 0;
+        margin-left: auto;
+        margin-right: auto;
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+  }
+  #profilepic {
+      width: 20em;
+      height: auto;
+      @media @mobile {
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-radius: 50%;
+        width: 40%;
+        height: auto;
+      }
+  }
 }
+
 #sidebar {
     margin: 0 10px auto auto;
     padding: 0 0 20px 0;
@@ -20,17 +40,11 @@
       width: 100%;
     }
 
-    #profilepic {
-        width: 100%;
-        height: auto;
-        font-size: 2em;
-        @media @mobile {
-          display: none;
-        }
-    }
+
     ul {
         list-style-type: none;
         padding: 0;
+        margin: 0;
     }
     li {
         width: 100%;
