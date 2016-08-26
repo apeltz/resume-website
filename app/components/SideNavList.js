@@ -17,20 +17,20 @@ export default class SideNavList extends React.Component {
           Contact: 'fa fa-envelope'
         }
         let listItemsToDOM = Object.keys(listItems).map((sectionTitle, i) => {
-          let className = () => {
-            let className = 'collapseable'
-            if(this.props.mobile().matches || i) className += ' hidden'
-            return className
-          }
+          let className = () => (this.props.mobile().matches || i) ? ' hidden': '';
           return (
               <li
                 key={'sidenav-list-item-'+i}
                 onClick={this.props.changeView}
-                className="hvr-bounce-to-right"
+                data-section={sectionTitle}
               >
-                  <i className={listItems[sectionTitle]}></i>
-                  <span>{sectionTitle}</span>
-                  <div className={className()}>
+                  <div className=" sectionHeader hvr-bounce-to-right">
+                    <i className={listItems[sectionTitle]}></i>
+                    <span>{sectionTitle}</span>
+                  </div>
+
+                  <div className={'sideNavContent' + className()}>
+                    <h2>{sectionTitle}</h2>
                     {this.props.views[sectionTitle]}
                   </div>
               </li>

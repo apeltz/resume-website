@@ -14,6 +14,7 @@ class App extends React.Component {
         super(props);
         this.state = {
             mobile: () => window.matchMedia('(max-width: 599px)'),
+            sectionTitle: 'About'
         }
         this.views = {
             'About': <About/>,
@@ -26,19 +27,26 @@ class App extends React.Component {
 
     changeView(e) {
         let sectionNode = e.target.closest('li');
-        let collapseable = sectionNode.getElementsByClassName('collapseable')[0]
+        let sectionTitle = sectionNode.dataset.section;
+        let sideNavContent = sectionNode.getElementsByClassName('sideNavContent')[0]
         if(this.state.mobile().matches) {
-          collapseable.classList.toggle('hidden')
+          sideNavContent.classList.toggle('hidden')
         }
         else {
-          if(collapseable.classList.contains('hidden')){
-            let allCollapseable = document.getElementsByClassName('collapseable')
+          if(sideNavContent.classList.contains('hidden')){
+            let allCollapseable = document.getElementsByClassName('sideNavContent')
             for(let n=0; n<allCollapseable.length; n++) {
               allCollapseable[n].classList.add('hidden')
-              collapseable.classList.remove('hidden')
+              sideNavContent.classList.remove('hidden')
             }
           }
         }
+        let classes = ['animated', 'fadeIn']
+        classes.map(c => document.getElementById('large-content').classList.remove(c))
+        this.setState({sectionTitle: sectionTitle});
+        setTimeout(function(){
+            classes.map(c => document.getElementById('large-content').classList.add(c))
+        },0);
     }
 
     render() {
@@ -47,6 +55,11 @@ class App extends React.Component {
                 <SideNav
                 mobile={this.state.mobile}
                 changeView={this.changeView.bind(this)} views={this.views}/>
+
+                <div id="large-content" className="animated fadeIn">
+                    <h2 id="sectionTitle">{this.state.sectionTitle}</h2>
+                    {this.views[this.state.sectionTitle]}
+                </div>
             </div>
         )
     }
