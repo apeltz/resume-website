@@ -1,19 +1,18 @@
-* {
-    border: green solid 2px;
-}
+// * {
+//     border: green solid 2px;
+// }
 
 @mobile: ~"screen and (max-width: 599px)";
 @standard: ~"screen and (min-width: 600px)";
 
 body {
-    width: 85%;
-    margin: auto;
-    margin-top: 20px;
+    margin: 0;
+    padding: 0;
     text-align: center;
     font-family: 'Catamaran', sans-serif;
+    background: #e7e7e7;
     @media @mobile {
       width: 100%;
-      margin-top: 0;
     }
 }
 div {
@@ -22,12 +21,14 @@ div {
     text-align: justify;
 }
 #wrapper {
+  width: 80%;
+  margin: 2em auto auto auto;
   display: -webkit-flex;
   display: flex;
-
   -webkit-flex-direction: row;
   flex-direction: row;
   @media @mobile {
+    width: 100%;
     -webkit-flex-direction: column;
     flex-direction: column;
   }

@@ -13,7 +13,7 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            sectionTitle: 'About'
+            sectionTitle: 'Resume'
         }
         this.views = {
             'About': <About/>,

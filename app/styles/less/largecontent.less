@@ -2,13 +2,7 @@
   width: 100%;
 
   h2 {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#212338+0,153144+72 */
-background: #212338; /* Old browsers */
-background: -moz-linear-gradient(left, #212338 0%, #153144 72%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #212338 0%,#153144 72%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #212338 0%,#153144 72%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212338', endColorstr='#153144',GradientType=1 ); /* IE6-9 */
-
+      background: #212338;
       margin: 0px 0px 0px 0px;
       padding: 3px 10px 3px 10px;
       color: white;
@@ -16,13 +10,45 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212338', end
       font-family: 'Permanent Marker', cursive;
   }
   p {
+      margin: 0;
       background-color: white;
-      margin: 5px 0px 0px 0px;
-      padding: 3px 10px 3px 10px;
+      padding: 1em 1em 0 1em;
       color: #696969;
       font-size: .9em;
+  }
+  p:last-child {
+    padding-bottom: 1em;
   }
   @media @mobile {
     display: none;
   }
+}
+// Responsive grid
+.responsive-grid {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: .5em;
+
+  .oneOfOne, .oneOfMany {
+    padding: 0 .5em 0 .5em;
+    margin: .5em;
+
+  }
+  background-color: white;
+  .oneOfOne {
+    background-color: lightblue;
+    flex-basis: 100%;
+  }
+  .oneOfMany {
+    background-color: lightgoldenrodyellow;
+    flex-grow: 1;
+    text-align: center;
+    bottom: 0;
+  }
+}
+h3 {
+  margin: 0;
 }

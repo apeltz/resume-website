@@ -8,9 +8,17 @@ export default class Resume extends React.Component {
   }
 
   render() {
+    let style = {
+      background: 'yellow',
+      width: '100%'
+    }
     return (
-      <div>
-          <p>Resume stuff</p>
+      <div className='responsive-grid'>
+        <div className='oneOfOne'><h3>Technical Skills</h3></div>
+        <div className='oneOfMany'><p>Javascript</p></div>
+        <div className='oneOfMany'><p>NodeJS</p></div>
+        <div className='oneOfMany'><p>React</p></div>
+        <div className='oneOfMany'><p>HTML</p></div>
       </div>
 
 
