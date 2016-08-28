@@ -17,7 +17,6 @@ export default class SideNavList extends React.Component {
           Contact: 'fa fa-envelope'
         }
         let listItemsToDOM = Object.keys(listItems).map((sectionTitle, i) => {
-          let className = () => i ? ' hidden': '';
           return (
               <li
                 className='sidenav-li'
@@ -29,7 +28,7 @@ export default class SideNavList extends React.Component {
                     <i className={listItems[sectionTitle]}></i>
                     <span>{sectionTitle}</span>
                   </div>
-                  <div className={'sideNavContent' + className()}>
+                  <div className={'sideNavContent' + ' hidden'}>
                     {this.props.views[sectionTitle]}
                   </div>
               </li>

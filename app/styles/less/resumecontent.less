@@ -23,14 +23,12 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
-
   .skill-logo {
     margin: 1em .5em 0 .5em;
     flex: 1;
     text-align: center;
     img {
       height: 2em;
-      margin-bottom: -.5em;
     }
     p {
       padding: 0;
@@ -41,10 +39,15 @@
 #res-experience, #res-projects, #res-education {
   div {
     margin-top: .5em;
-    background-color: #818F87;
+    background-color: @marinegray;
 
     p {
       color: white;
+    }
+    @media @mobile {
+      p:first-child {
+        display: block;
+      }
     }
     p:last-child {
       padding-right: .5em;

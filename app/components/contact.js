@@ -10,7 +10,7 @@ export default class Contact extends React.Component {
     render() {
     let divStyle = {
       backgroundImage: 'url(./assets/envelope.jpg)',
-      backgroundSize: 'auto 100%',
+      backgroundSize: 'auto 90%',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center'
     }
