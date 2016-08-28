@@ -1,32 +1,32 @@
 #socialMediaLinks {
-    padding: 1em 1em 1em .5em;
+    padding: 1em 1em 1em 1em;
     background-color: #33373d;
     display: flex;
-    justify-content: space-between;
-    i {
-      color: white;
-      height: 1em;
-      width: 1em;
-    }
+    justify-content: center;
     div {
-      margin-left: .5em;
-        text-align: center;
-        background-color: inherit;
-        border-radius: 50%;
-        border: 2px solid #ecf0f1;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-        // Variable with media
-        padding: .5em;
-        @media @mobile {
-          padding: 1em;
-        }
-        a {
-          display: block;
-        }
+      background-color: inherit;
+      border-radius: 50%;
+      border: 2px solid #ecf0f1;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+
+      padding: .5em .5em .2em .5em;
+      @media @mobile {
+        padding: .5em .5em .2em .5em;
+      }
+      i {
+        margin: auto;
+        color: white;
+        font-size: 2em;
+        height: 1em;
+        width: 1em;
+      }
+    }
+    a {
+      margin: 0 .5em 0 .5em;
     }
     div:hover {
         background-color: #2098d1;

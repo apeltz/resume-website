@@ -10,7 +10,7 @@ export default class Portfolio extends React.Component {
   render() {
     return (
       <div>
-          <p>Uploading soon...</p>
+          <p>Coming soon...</p>
       </div>
 
 
