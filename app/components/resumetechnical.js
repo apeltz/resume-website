@@ -10,9 +10,9 @@ export default class TechnicalSkills extends React.Component {
   render() {
     let skills = {
       Javascript: "./assets/logo_js.jpg",
-      NodeJS: "./assets/logo_js.jpg",
-      HTML: "./assets/logo_js.jpg",
-      CSS: "./assets/logo_js.jpg",
+      NodeJS: "./assets/logo_node.png",
+      HTML: "./assets/logo_html.png",
+      CSS: "./assets/logo_css.png",
     }
     let skillsToDOM = Object.keys(skills).map((s, i) => {
       return (

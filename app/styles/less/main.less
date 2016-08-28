@@ -5,12 +5,20 @@
 @mobile: ~"screen and (max-width: 599px)";
 @standard: ~"screen and (min-width: 600px)";
 
+@darkblue: #212338;
+@mediumblue: #0F6785;
+@marinegray: #818F87;
+@crimson: crimson;
+@textgray: #696969;
+@bggray: #e7e7e7;
+
+
 body {
     margin: 0;
     padding: 0;
     text-align: center;
     font-family: 'Catamaran', sans-serif;
-    background: #e7e7e7;
+    background: @bggray;
     @media @mobile {
       width: 100%;
     }
@@ -19,7 +27,7 @@ div {
     margin: 0;
     padding: 0;
     text-align: justify;
-    color: #696969;
+    color: @textgray;
 }
 
 #wrapper {
@@ -40,8 +48,8 @@ div {
   display: none;
 }
 :link {
-  color: #0F6785;
+  color: @mediumblue;
 }
 :visited {
-  color: crimson;
+  color: @crimson;
 }
