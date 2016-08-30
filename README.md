@@ -13,6 +13,6 @@ Example deployed at [aaronpeltz.com](http://www.aaronpeltz.com)
  * Add AWS continuous delivery with [CodePipeline](aws.amazon.com/codepipeline/)
 
 ##### Desktop:
-![Demo1](http://github.com/apeltz/tree/master/readmeassets/flowdesktop.gif)
+![Demo1](https://github.com/apeltz/resume-website/blob/master/readmeassets/flowdesktop.gif)
 ##### Mobile:
-![Demo1](http://github.com/apeltz/tree/master/readmeassets/flowmobile.gif)
+![Demo1](https://github.com/apeltz/resume-website/blob/master/readmeassets/flowmobile.gif)
