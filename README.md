@@ -1,6 +1,6 @@
 # Resume Boilerplate
 Simple singe-page adaptive/responsive resume website.
-Example deployed at [aaronpeltz.com](https://www.aaronpeltz.com)
+Example deployed at [aaronpeltz.com](http://www.aaronpeltz.com)
 
 #### Stack:
  * Front-End: React
@@ -11,3 +11,8 @@ Example deployed at [aaronpeltz.com](https://www.aaronpeltz.com)
  * LESS/CSS file cleanup
  * Refactor React components
  * Add AWS continuous delivery with [CodePipeline](aws.amazon.com/codepipeline/)
+
+##### Desktop:
+![Demo1](http://github.com/apeltz/tree/master/readmeassets/flowdesktop.gif)
+##### Mobile:
+![Demo1](http://github.com/apeltz/tree/master/readmeassets/flowmobile.gif)
