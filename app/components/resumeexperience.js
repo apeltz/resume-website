@@ -20,7 +20,6 @@ export default class ResumeExperience extends React.Component {
           <li>Advised on over 25 successfully closed sales and recapitalizations representing an aggregate transaction value of over $1 billion
           </li>
           <li>Aggregated 10,000+ data entries from RESTful API queries to SQL database to provide historical data set for creation of statistically driven VBA-based Monte Carlo simulation model for predicting performance of feature film portfolios</li>
-          <li>Introduced user analytics to firm website to validate proposed redesign; rebuilt website with HTML/CSS to improve UE and optimize based on data collected in testing</li>
         </ul>
 
 

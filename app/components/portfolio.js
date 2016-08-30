@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PortfolioCards from './portfoliocards';
 
 export default class Portfolio extends React.Component {
 
@@ -10,7 +10,7 @@ export default class Portfolio extends React.Component {
   render() {
     return (
       <div>
-          <p>Coming soon...</p>
+          <PortfolioCards />
       </div>
 
 

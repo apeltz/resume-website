@@ -12,7 +12,7 @@ export default class ResumeProjects extends React.Component {
       <div id='res-projects'>
 
         <div className='res-subhead'>
-        <p className='res-title'>Sabertooth - </p>
+        <p className='res-title'>Sabertooth</p>
         <p className='res-desc'>Javascript library</p>
         </div>
         <ul>
@@ -26,7 +26,7 @@ export default class ResumeProjects extends React.Component {
 
 
         <div className='res-subhead'>
-        <p className='res-title'>ElephantCards - </p>
+        <p className='res-title'>ElephantCards</p>
         <p className='res-desc'>Flashcard deck web platform</p>
         </div>
         <ul>
