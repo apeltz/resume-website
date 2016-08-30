@@ -10,7 +10,7 @@ Example deployed at [aaronpeltz.com](http://www.aaronpeltz.com)
  * Prop validation
  * LESS/CSS file cleanup
  * Refactor React components
- * Add AWS continuous delivery with [CodePipeline](aws.amazon.com/codepipeline/)
+ * Add AWS continuous delivery with [CodePipeline](https://aws.amazon.com/codepipeline/)
 
 ##### Desktop:
 ![Demo1](https://github.com/apeltz/resume-website/blob/master/readmeassets/flowdesktop.gif)
