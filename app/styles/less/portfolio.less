@@ -5,23 +5,19 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  align-content: space-around;
   padding: 1em;
-
-  a {
-    text-decoration: none;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    width: 33%;
+  @media @mobile {
+    justify-content: center;
   }
+
   .project-thumb {
     display: flex;
     flex-direction: column;
+    max-width: 33%;
     margin: 1em .75em 0 .55em;
     padding: .5em;
     background-color: @bggray;
     border: 1px solid green;
-
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     img {
       align-self: center;
@@ -36,6 +32,13 @@
     p {
       line-height: 1.2em;
       padding: .5em;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    @media @mobile {
+      max-width: 30em;
     }
   }
 }

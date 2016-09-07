@@ -24,19 +24,21 @@ export default class PortfolioCards extends React.Component {
     }
     let projectsToDOM = Object.keys(projects).map((p, i) => {
       return (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href={projects[p].url}
-          key={'project-'+i}
-          onClick={e => e.stopPropagation()}
-        >
-          <div className='project-thumb'>
-            <img src={projects[p].thumb} />
-            <h3>{projects[p].title}</h3>
-            <p>{projects[p].desc}</p>
+          <div
+            className='project-thumb'
+            key={'project-'+i}
+          >
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={projects[p].url}
+              onClick={e => e.stopPropagation()}
+            >
+              <img src={projects[p].thumb} />
+              <h3>{projects[p].title}</h3>
+              <p>{projects[p].desc}</p>
+            </a>
           </div>
-        </a>
       )
     });
     return (

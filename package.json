@@ -4,8 +4,8 @@
   "description": "boilerplate resume & portfolio template",
   "main": "index.html",
   "scripts": {
-    "webpack-dev-server": "webpack-dev-server",
-    "webpack": "webpack"
+    "dev-server": "webpack-dev-server",
+    "build": "webpack"
   },
   "babel": {
     "presets": [

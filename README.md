@@ -5,6 +5,7 @@ Example deployed at [aaronpeltz.com](http://www.aaronpeltz.com)
 #### Stack:
  * Front-End: React
  * Build: Webpack, Webpack-HMR
+ 
 #### To Do:
  * Testing: Cucumber/Selenium (feature), Chai, Enzyme (unit)
  * Prop validation
