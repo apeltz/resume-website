@@ -3,6 +3,7 @@ import TechnicalSkills from './resumetechnical.js'
 import ResumeExperience from './resumeexperience.js'
 import ResumeProjects from './resumeprojects.js'
 import ResumeEducation from './resumeeducation.js'
+import style from './index.less';
 
 
 export default class Resume extends React.Component {

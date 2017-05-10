@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './social-media-links.less';
 
 export default class SocialMediaLinks extends React.Component {
 
