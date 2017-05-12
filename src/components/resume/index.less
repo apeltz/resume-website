@@ -1,0 +1,99 @@
+@import '../../styles/styles.less';
+
+.resume {
+	padding: 1em;
+	background-color: white;
+
+	h3 {
+		margin: 0;
+		padding: 0 .5em 0 .5em;
+		font-size: 1em;
+		color: @mediumblue;
+		border-bottom: 1px solid #037A76;
+	}
+	p {
+		padding: .5em;
+	}
+}
+
+.resSkills {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	.skillLogo {
+		margin: 1em .5em 0 .5em;
+		flex: 1;
+		text-align: center;
+		img {
+			height: 2em;
+		}
+		p {
+			padding: 0;
+		}
+	}
+}
+
+.resExperience, .resProjects, .resEducation {
+	div {
+		margin-top: .5em;
+		background-color: @marinegray;
+
+		p {
+			color: white;
+		}
+		@media @mobile {
+			p:first-child {
+				display: block;
+			}
+		}
+		p:last-child {
+			padding-right: .5em;
+		}
+		p:first-child, li:first-child {
+			padding-top: 0;
+		}
+		p:last-child, li:last-child {
+			padding-bottom: 0;
+		}
+	}
+	p {
+		padding: 0 0 0 .5em;
+		display: inline-block;
+		background-color: inherit;
+	}
+	.resTitle {
+		font-weight: bold;
+	}
+	.resDesc {
+		font-style: italic;
+	}
+	.resDate {
+		float: right;
+	}
+	ul {
+		margin: 0 .5em 0 1.5em;
+		padding: 0;
+	}
+	li {
+		padding: 0;
+		font-size: .9em;
+	}
+	li:first-child {
+		padding-top: 1em;
+	}
+	li:last-child {
+		padding-bottom: 1em;
+	}
+}
+.resEducation {
+	padding: .5em 0 .5em 0;
+	line-height: 2em;
+	img {
+		height: 2em;
+		width: 2em;
+		margin-right: .5em;
+		float: left;
+	}
+}

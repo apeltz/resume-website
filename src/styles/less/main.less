@@ -1,0 +1,38 @@
+
+@mobile: ~"handheld, screen and (max-width: 995px)";
+@standard: ~"screen and (min-width: 996px)";
+
+@darkblue: #212338;
+@mediumblue: #0F6785;
+@marinegray: #818F87;
+@crimson: crimson;
+@textgray: #696969;
+@bggray: #e7e7e7;
+
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Catamaran', sans-serif;
+	background: @bggray;
+		@media @mobile {
+			width: 100%;
+		}
+}
+div {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	color: @textgray;
+}
+
+.hidden {
+	display: none;
+}
+:link {
+	color: @mediumblue;
+}
+:visited {
+	color: @crimson;
+}

@@ -5,11 +5,11 @@ import style from './index.less';
 
 function SideNav({ views, activeView, changeView }) {
 	return (
-		<div id="sidenav">
+		<div className={style.sidenav}>
 
-			<div id='img-section'>
-				<h1 id="nametitlebar">AARON PELTZ</h1>
-				<img id="profilepic" src="./assets/ap22.png"></img>
+			<div className={style.imgSection} >
+				<h1 className={style.nameTitleBar}>AARON PELTZ</h1>
+				<img className={style.profilePic} src="./assets/ap22.png" />
 			</div>
 
 			<SideNavList views={views} activeView={activeView} changeView={changeView} />
@@ -17,7 +17,7 @@ function SideNav({ views, activeView, changeView }) {
 			<SocialMediaLinks />
 
 		</div>
-	)
+	);
 }
 
 export default SideNav;

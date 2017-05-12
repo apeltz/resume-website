@@ -1,0 +1,43 @@
+@import '../../styles/styles.less';
+
+.wrapper {
+	width: 80%;
+	margin: 2em auto auto auto;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	@media @mobile {
+		width: 100%;
+		margin-top: 0;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+}
+
+.largeContent {
+	width: 100%;
+	background-color: white;
+	h2 {
+		background: @darkblue;
+		margin: 0px 0px 0px 0px;
+		padding: 3px 10px 3px 10px;
+		color: white;
+		font-size: 1.5em;
+		font-family: 'Permanent Marker', cursive;
+	}
+	p, li {
+		margin: 0;
+		padding: .5em 1em .5em 1em;
+		font-size: .9em;
+	}
+	p:first-child, li:first-child {
+		padding-top: 1em;
+	}
+	p:last-child, li:last-child {
+		padding-bottom: 1em;
+	}
+	@media @mobile {
+		display: none;
+	}
+}
