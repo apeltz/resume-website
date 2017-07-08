@@ -13,8 +13,14 @@ module.exports = {
 		loaders: [
 			{ test: /\.js/, loaders: ['babel-loader'], exclude: /node_modules/ },
 			{ test: /\.jsx/, loaders: ['babel-loader'], exclude: /node_modules/ },
-			{ test: /\.css$/, loaders: ['style-loader', 'css-loader?modules'] },
-			{ test: /\.less$/, loaders:	['style-loader','css-loader?modules','less-loader?modules'] },
+			{
+				test: /\.less$/,
+				loaders:	[
+					'style-loader',
+					'css-loader?modules&localIdentName=[path][name]__[local]',
+					'less-loader?modules'
+				]
+			},
 			{ test: /\.json$/, loader: 'json' },
 			{ test: /\.jpe?g$|\.gif$|\.png$|\.ico$/, loader: 'file?name=[name].[ext]' },
 			{ test: /\.eot|\.ttf|\.svg|\.woff2?/, loader: 'file?name=[name].[ext]' }

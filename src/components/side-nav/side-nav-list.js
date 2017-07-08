@@ -1,34 +1,37 @@
 import React from 'react';
+import style from './index.less';
 
-function SideNavList({ views, activeView, changeView }) {
+function SideNavList({ views, handleNavSelection }) {
 
-	const listItems = {
-		// key -> section title, value -> className for FontAwesome icon
-		About: 'fa fa-user',
-		Resume: 'fa fa-file-text',
-		Contact: 'fa fa-envelope'
-	};
-	let listItemsToDOM = Object.keys(listItems).map((sectionTitle, i) => (
-		// let isActive = sectionTitle === activeView;
-		<li
-			className="sidenav-li"
-			key={'sidenav-list-item-'+i}
-			onClick={changeView}
-			data-section={sectionTitle}
-		>
-			<div className="sectionHeader hvr-bounce-to-right" >
-				<i className={listItems[sectionTitle]} />
-				<span>{sectionTitle}</span>
-			</div>
-			<div className={'sideNavContent'}>
-				{views[sectionTitle]}
-			</div>
-		</li>
-	));
+	function createListItems() {
+		const listItems = {
+			// key -> section title, value -> className for FontAwesome icon
+			About: 'fa fa-user',
+			Resume: 'fa fa-file-text',
+			Contact: 'fa fa-envelope'
+		};
+		return Object.keys(listItems).map((sectionTitle, i) => (
+			// let isActive = sectionTitle === activeView;
+			<li
+				className={style.sideNavListItem}
+				key={'sidenav-list-item-'+i}
+				onClick={handleNavSelection}
+				data-section={sectionTitle}
+			>
+				<div className={[style.sectionHeader, style.hvrBounceToRight].join(' ')}>
+					<i className={listItems[sectionTitle]} />
+					<span>{sectionTitle}</span>
+				</div>
+				<div className={style.sideNavContent}>
+					{views[sectionTitle]}
+				</div>
+			</li>
+		));
+	}
 
 	return (
-		<ul className="sidenav-ul">
-			{listItemsToDOM}
+		<ul className={style.sideNavList} >
+		{ createListItems() }
 		</ul>
 	);
 

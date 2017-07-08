@@ -42,12 +42,12 @@
 	@media @mobile {
 		margin: 0;
 	}
-	.sideNav-ul {
+	.sideNavList {
 		list-style-type: none;
 		padding: 0;
 		margin: 0;
 	}
-	.sideNav-li {
+	.sideNavListItem {
 		width: 100%;
 		margin: 0;
 		border-top: 1px solid gray;
@@ -58,7 +58,7 @@
 			padding: .5em 1em .5em 1em;
 		}
 	}
-	.sideNav-li:last-child {
+	.sideNavListItem:last-child {
 		border-bottom: 1px solid gray;
 	}
 	i {
@@ -73,7 +73,12 @@
 }
 
 div.sideNavContent {
-
+	overflow: hidden;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	max-height: 0;
 	@media @standard {
 		display: none;
 	}
