@@ -5,25 +5,20 @@ function ResumeEducation() {
 	return (
 		<div className={style.resEducation}>
 
-		<p className={style.resTitle}>
-		<img src="./assets/logo_codesmith.jpg" />
-		Codesmith</p>
-		<p className={style.resDesc}>Software Engineering Immersive</p>
-		<p className={style.restDate}>2016</p>
-		<br />
+			<div>
+				<img src="./assets/logo_codesmith.jpg" />
+				<p className={style.resTitle}>Codesmith - </p>
+				<p className={style.resDesc}>Coding Bootcamp</p>
+				<p className={style.resDate}>2016</p>
+			</div>
 
-		<p className={style.resTitle}>
-		<img src="./assets/logo_ucla.png" />
-		UCLA Extension</p>
-		<p className={style.resDesc}>Programming With Java</p>
-		<p className={style.restDate}>2012</p>
-		<br />
+			<div>
+				<img src="./assets/logo_usc.jpg" />
+				<p className={style.resTitle}>USC - </p>
+				<p className={style.resDesc}>BSc. Business Admin, Finance</p>
+				<p className={style.resDate}>2009</p>
+			</div>
 
-		<p className={style.resTitle}>
-		<img src="./assets/logo_usc.jpg" />
-		USC</p>
-		<p className={style.resDesc}>BSc. Business Administration, Finance</p>
-		<p className={style.restDate}>2009</p>
 		</div>
 	);
 

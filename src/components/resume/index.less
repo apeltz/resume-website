@@ -21,10 +21,8 @@
 	flex-flow: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-items: flex-start;
 	.skillLogo {
-		margin: 1em .5em 0 .5em;
-		flex: 1;
+		margin: 1em 1em 0 1em;
 		text-align: center;
 		img {
 			height: 2em;
@@ -35,33 +33,46 @@
 	}
 }
 
-.resExperience, .resProjects, .resEducation {
+.resExperience {
 	div {
-		margin-top: .5em;
 		background-color: @marinegray;
-
-		p {
-			color: white;
-		}
 		@media @mobile {
 			p:first-child {
 				display: block;
 			}
 		}
+	}
+	p {
+		color: white;
+	}
+}
+
+.resExperience, .resEducation {
+	div {
+		margin-top: .5em;
+
 		p:last-child {
 			padding-right: .5em;
 		}
 		p:first-child, li:first-child {
 			padding-top: 0;
 		}
+
 		p:last-child, li:last-child {
 			padding-bottom: 0;
 		}
 	}
 	p {
-		padding: 0 0 0 .5em;
-		display: inline-block;
-		background-color: inherit;
+		&.resTitle, &.resDesc, &.resDate {
+			padding: 0 0 0 .5em;
+			background-color: inherit;
+		}
+		&.resTitle, &.resDesc {
+			display: inline-block;
+		}
+		&.resDate {
+			float: right;
+		}
 	}
 	.resTitle {
 		font-weight: bold;
@@ -87,13 +98,23 @@
 		padding-bottom: 1em;
 	}
 }
+
 .resEducation {
-	padding: .5em 0 .5em 0;
-	line-height: 2em;
-	img {
-		height: 2em;
-		width: 2em;
-		margin-right: .5em;
+	padding: .5em;
+	display: flex;
+	flex-wrap: wrap;
+	div {
+		width: 100%;
+	}
+	img, p {
+		line-height: 2em;
+	}
+	img, p.resTitle {
 		float: left;
 	}
+	img {
+		height: 30px;
+		margin-right: .5em;
+	}
+	padding-bottom: 1.5em;
 }

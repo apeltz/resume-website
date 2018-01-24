@@ -1,8 +1,10 @@
 import React from 'react';
+import style from './index.less';
 
 function About() {
 	return (
-		<div>
+		<div className={style.about}>
+			<img src="./assets/jumbotron.png" />
 			<p>
 				{
 					`I'm a software engineer dedicated to the creation of powerful web
@@ -28,7 +30,7 @@ function About() {
 					past those I had when I was 10. I'm still awed by space and technology,
 					am fascinated by other worlds, robots, and lasers, and am curious
 					to find out how things work. I also enjoy hearing other people get
-					excited up about what they love.`
+					excited about what they love.`
 				}
 			</p>
 		</div>

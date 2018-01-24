@@ -1,7 +1,6 @@
 import React from 'react';
 import TechnicalSkills from './resume-technical.js';
 import ResumeExperience from './resume-experience.js';
-import ResumeProjects from './resume-projects.js';
 import ResumeEducation from './resume-education.js';
 import style from './index.less';
 
@@ -14,9 +13,6 @@ function Resume() {
 
 			<h3>Experience</h3>
 			<ResumeExperience />
-
-			<h3>Projects</h3>
-			<ResumeProjects />
 
 			<h3>Education</h3>
 			<ResumeEducation />

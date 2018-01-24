@@ -3,7 +3,32 @@ import style from './index.less';
 
 function ResumeExperience() {
 	return (
-		<div id="res-projects">
+		<div className={style.resExperience}>
+
+			<div>
+				<p className={style.resTitle}>Synacor, Inc.</p>
+				<p className={style.resDesc}>Software Developer II</p>
+				<p className={style.resDate}>2016-Present</p>
+			</div>
+			<ul>
+				<li>
+					{`Build high-volume, scalable web applications that deliver personalized
+						news, information, and entertainment across desktop and mobile browsers`}
+				</li>
+				<li>
+					{`Use PreactJS to create re-usable and customizable components as part
+						of modular, component-based architecture`}
+				</li>
+				<li>
+					{`Adhere to company’s strong code maintainability policy through combination
+						of TDD and unit-based testing`}
+				</li>
+				<li>
+					{`Acting subject-matter-expert for platform’s ‘My Portfolio’ vertical
+						delivering users financial holdings information and performance metrics
+						for user-created, customizable stock portfolios`}
+				</li>
+			</ul>
 
 			<div>
 				<p className={style.resTitle}>Salem Partners, LLC</p>
@@ -12,14 +37,12 @@ function ResumeExperience() {
 			</div>
 			<ul>
 				<li>
-					{`Advised on over 25 successfully closed sales and recapitalizations
-					representing an aggregate transaction value of over $1 billion`}
+					{`Execute full scope of firm advisory assignments with a primary focus
+						on lower middle-market sell-side mergers & acquisitions`}
 				</li>
 				<li>
-					{`Aggregated 10,000+ data entries from RESTful API queries to SQL
-					database to provide historical data set for creation of statistically
-					driven VBA-based Monte Carlo simulation model for predicting performance
-					of feature film portfolios`}
+					{`Advised on over 25 successfully closed sales and recapitalizations
+					representing an aggregate transaction value of over $1 billion`}
 				</li>
 			</ul>
 
@@ -30,12 +53,12 @@ function ResumeExperience() {
 			</div>
 			<ul>
 				<li>
-					{`Authored over 60 globally distributed digital publications representing
+					{`Authored 60+ globally distributed digital publications representing
 					eight different industries`}
 				</li>
 				<li>
-					{`Automated weekly collection of 5,000+ financial market data entries
-						with VBA plugin and scripted SQL queries`}
+					{`Collected, analyzed, and presented industry and company financial
+						data for publication in globally distributed periodicals`}
 				</li>
 			</ul>
 
