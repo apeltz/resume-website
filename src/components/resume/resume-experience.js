@@ -31,6 +31,18 @@ function ResumeExperience() {
 			</ul>
 
 			<div>
+				<p className={style.resTitle}>UCode, Inc.</p>
+				<p className={style.resDesc}>Instructor</p>
+				<p className={style.resDate}>2017-2018</p>
+			</div>
+			<ul>
+				<li>
+					{`Teach youth ages 6-18 front-end software development including HTML, CSS, Javascript with an emphasis on language
+						fundamentals and personal project creation`}
+				</li>
+			</ul>
+
+			<div>
 				<p className={style.resTitle}>Salem Partners, LLC</p>
 				<p className={style.resDesc}>Associate, Investment Banking</p>
 				<p className={style.resDate}>2011-2016</p>

@@ -25,7 +25,7 @@ function TechnicalSkills() {
 		<div className={style.resSkills}>
 			{skillsToDOM}
 			<p>
-				<span>• Javascript</span>
+				<span>Javascript</span>
 				<span>• ReactJS</span>
 				<span>• NodeJS</span>
 				<span>• Git</span>
