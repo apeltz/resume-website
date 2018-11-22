@@ -25,8 +25,16 @@ function TechnicalSkills() {
 		<div className={style.resSkills}>
 			{skillsToDOM}
 			<p>
-				{`Javascript  •  ReactJS  •  NodeJS  •  Git  •  HTML/CSS  •  Heroku  •  AWS  •  RESTful APIs  •
-					TDD (Expect  •  Mocha  •  Chai  •  Sinon)  •  build tools (Webpack  •  Browserify  •  Babel)`}
+				<span>• Javascript</span>
+				<span>• ReactJS</span>
+				<span>• NodeJS</span>
+				<span>• Git</span>
+				<span>• HTML/CSS</span>
+				<span>• Heroku</span>
+				<span>• AWS</span>
+				<span>• RESTful APIs</span>
+				<span>• TDD (Expect • Mocha • Chai • Sinon)</span>
+				<span>• Build Tools (Webpack • Browserify • Babel)</span>
 			</p>
 		</div>
 	);

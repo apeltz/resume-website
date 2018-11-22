@@ -7,7 +7,7 @@
     "dev": "webpack-dev-server --progress --colors",
     "build": "webpack --progress --colors",
     "lint": "eslint ./app",
-    "sync-prod": "npm run build && aws s3 sync dist/ s3://www.aaronpeltz.com"
+    "deploy-s3": "npm run build && aws s3 sync dist/ s3://www.aaronpeltz.com"
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"
