@@ -8,7 +8,7 @@ function ResumeExperience() {
 			<div>
 				<p className={style.resTitle}>Synacor, Inc.</p>
 				<p className={style.resDesc}>Software Developer II</p>
-				<p className={style.resDate}>2016-Present</p>
+				<p className={style.resDate}>2016-2018</p>
 			</div>
 			<ul>
 				<li>
