@@ -23,10 +23,6 @@ function Contact() {
 						<td className={style.value}><a target="_blank" rel="noopener noreferrer" href="mailto:aaron.peltz@gmail.com">aaron.peltz@gmail.com</a></td>
 					</tr>
 					<tr>
-						<td>Phone:</td>
-						<td className={style.value}>(310) 698.2327</td>
-					</tr>
-					<tr>
 						<td>LinkedIn:</td>
 						<td className={style.value}><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/apeltz">linkedin.com/in/apeltz</a></td>
 					</tr>

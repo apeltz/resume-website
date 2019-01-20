@@ -15,6 +15,7 @@ function TechnicalSkills() {
 		'Mocha / Chai': './assets/logo_mochachai.png',
 		Jest: './assets/logo_jest.png',
 		SinonJs: './assets/logo_sinon.png',
+		Enzyme: './assets/logo_enzyme.png',
 		Solidity: './assets/logo_solidity.png',
 		Truffle: './assets/logo_truffle.jpg'
 	};
