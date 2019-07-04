@@ -8,7 +8,7 @@ const render = (Component) => {
 		<AppContainer>
 			<Component />
 		</AppContainer>,
-		document.getElementById('container')
+		document.getElementById('app-container')
 	);
 };
 

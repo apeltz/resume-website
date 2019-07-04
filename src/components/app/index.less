@@ -1,12 +1,5 @@
 @import '../../styles/styles.less';
 
-html, body {
-	background-color: @bgmedium;
-	@media @mobile {
-		min-height: 100%;
-	}
-}
-
 .outer_wrapper {
 	margin: auto;
 	margin-top: 2em;
@@ -18,6 +11,8 @@ html, body {
 }
 
 .inner_wrapper {
+	margin: auto;
+	max-width: 1300px;
 	display: flex;
 	justify-content: center;
 	@media @mobile {
@@ -27,11 +22,10 @@ html, body {
 }
 
 .largeContent {
-	background-color: @bgmedium;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	max-width: 900px;
+	// max-width: 900px;
 	h2 {
 		background: @main-heading;
 		margin: 0px 0px 0px 0px;

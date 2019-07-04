@@ -30,15 +30,16 @@
 @link: @bluemedium;
 @link-visited: @crimson;
 
-body {
+html, body {
 	margin: 0;
 	padding: 0;
+	background-color: @bgmedium;
 	text-align: center;
 	font-family: 'Catamaran', sans-serif;
-	background: @bglight;
-		@media @mobile {
-			width: 100%;
-		}
+	@media @mobile {
+		min-height: 100%;
+		width: 100%;
+	}
 }
 div {
 	margin: 0;
