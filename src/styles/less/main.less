@@ -2,20 +2,40 @@
 @mobile: ~"handheld, screen and (max-width: 995px)";
 @standard: ~"screen and (min-width: 996px)";
 
-@darkblue: #212338;
-@mediumblue: #0F6785;
-@marinegray: #818F87;
+@white: white;
+@graywhite: #e7e7e7;
+@graylight: #818F87;
+@graymedium: #696969;
+@graydark: #33373d;
+@bluedark: #212338;
+@bluemedium: #0F6785;
+@bluevibrant: #2098d1;
 @crimson: crimson;
-@textgray: #696969;
-@bggray: #e7e7e7;
 
+/* backgrounds */
+@bglight: @white;
+@bgmedium: @graywhite;
+@bgdark: @graydark;
+
+/* text */
+@light-on-dark: @white;
+@dark-on-light: @graymedium;
+
+/* headings, subheadings */
+@main-heading: @bluedark;
+@sub-heading: @bluemedium;
+@sub-heading-alt-bg: @graylight;
+
+/* links */
+@link: @bluemedium;
+@link-visited: @crimson;
 
 body {
 	margin: 0;
 	padding: 0;
 	text-align: center;
 	font-family: 'Catamaran', sans-serif;
-	background: @bggray;
+	background: @bglight;
 		@media @mobile {
 			width: 100%;
 		}
@@ -24,11 +44,11 @@ div {
 	margin: 0;
 	padding: 0;
 	text-align: justify;
-	color: @textgray;
+	color: @dark-on-light;
 }
 :link {
-	color: @mediumblue;
+	color: @link;
 }
 :visited {
-	color: @crimson;
+	color: @link-visited;
 }

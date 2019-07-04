@@ -2,14 +2,14 @@
 
 .resume {
 	padding: 1em;
-	background-color: white;
+	background-color: @bglight;
 
 	h3 {
 		margin: 0;
 		padding: 0 .5em 0 .5em;
 		font-size: 1em;
-		color: @mediumblue;
-		border-bottom: 1px solid #037A76;
+		color: @sub-heading;
+		border-bottom: 1px solid @sub-heading;
 	}
 	p {
 		padding: .5em;
@@ -18,12 +18,12 @@
 
 .resSkills {
 	display: flex;
-	flex-flow: row;
-	flex-wrap: wrap;
+	flex-flow: row wrap;
 	justify-content: space-around;
 	.skillLogo {
 		margin: 1em 1em 0 1em;
 		text-align: center;
+		width: 15%;
 		img {
 			height: 2em;
 		}
@@ -36,9 +36,23 @@
 	}
 }
 
-.resExperience {
+.resExperienceItem {
+	display: flex;
+	div:first-child {
+		margin-top: 0.5em;
+		margin-right: 0.5em;
+	}
+	img {
+		width: 54px;
+	}
+}
+
+.resExperienceItemDetail {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 	div {
-		background-color: @marinegray;
+		background-color: @sub-heading-alt-bg;
 		@media @mobile {
 			p:first-child {
 				display: block;
@@ -46,11 +60,11 @@
 		}
 	}
 	p {
-		color: white;
+		color: @light-on-dark;
 	}
 }
 
-.resExperience, .resEducation {
+.resExperienceItemDetail, .resEducation {
 	div {
 		margin-top: .5em;
 

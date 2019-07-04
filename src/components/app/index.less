@@ -1,35 +1,41 @@
 @import '../../styles/styles.less';
 
 html, body {
+	background-color: @bgmedium;
 	@media @mobile {
 		min-height: 100%;
-		background-color: @background-color;
 	}
 }
 
-.wrapper {
-	width: 80%;
-	margin: 2em auto auto auto;
-	display: -webkit-flex;
+.outer_wrapper {
+	margin: auto;
+	margin-top: 2em;
+	max-width: 90%;
+	@media @mobile {
+		margin-top: 0;
+		max-width: 100%
+	}
+}
+
+.inner_wrapper {
 	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
+	justify-content: center;
 	@media @mobile {
 		width: 100%;
-		margin-top: 0;
-		-webkit-flex-direction: column;
 		flex-direction: column;
 	}
 }
 
 .largeContent {
-	width: 100%;
-	background-color: white;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	max-width: 900px;
 	h2 {
-		background: @darkblue;
+		background: @main-heading;
 		margin: 0px 0px 0px 0px;
 		padding: 3px 10px 3px 10px;
-		color: white;
+		color: @light-on-dark;
 		font-size: 1.5em;
 		font-family: 'Permanent Marker', cursive;
 	}

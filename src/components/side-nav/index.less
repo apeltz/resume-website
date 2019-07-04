@@ -3,13 +3,13 @@
 .imgSection {
 	text-align: center;
 	position: relative;
-	background-color: @background-color;
+	background-color: @bgdark;
 	.nameTitleBar {
 		position: absolute;
 		padding-left: 1.5em;
 		margin: 0;
 		font-family: 'Permanent Marker', cursive;
-		color: white;
+		color: @light-on-dark;
 		font-size: 2em;
 		text-shadow: 0px 0px 30px rgba(17, 17, 17, 1);
 		@media @mobile {
@@ -36,11 +36,13 @@
 }
 
 .sideNav {
+	width: 320px;
 	margin:0 1em auto auto;
 	padding: 0;
-	background-color: white;
+	background-color: @bgdark;
 	@media @mobile {
 		margin: 0;
+		width: 100%;
 	}
 	.sideNavList {
 		list-style-type: none;
@@ -50,12 +52,12 @@
 	.sideNavListItem {
 		width: 100%;
 		margin: 0;
-		border-top: 1px solid gray;
 
 		div.sectionHeader {
 			color: #ecf0f1;
-			background-color: @background-color;
-			padding: .5em 1em .5em 1em;
+			background-color: @bgdark;
+			padding: .5em 1em;
+			border-top: 1px solid gray;
 		}
 	}
 	.sideNavListItem:last-child {
