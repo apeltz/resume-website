@@ -13,7 +13,6 @@ class App extends Component {
 		let activeView = e.currentTarget.dataset.section;
 		let content = e.currentTarget.getElementsByTagName('div')[1];
 		console.log('CONTENT: ', content);
-		// content.style.maxHeight = content.style.maxHeight ? null : "100%";
 		content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
 		this.setState({ activeView });
 	}

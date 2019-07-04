@@ -11,7 +11,6 @@ function Contact() {
 	};
 	return (
 		<div className={style.contact}>
-			<div></div>
 			<div className={style.inner_wrapper} style={divStyle}>
 				<table>
 					<thead />
