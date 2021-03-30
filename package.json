@@ -4,10 +4,10 @@
   "description": "boilerplate resume & portfolio template",
   "main": "index.html",
   "scripts": {
-    "dev": "webpack-dev-server --progress --colors",
-    "build": "webpack --progress --colors",
-    "lint": "eslint ./app",
-    "deploy-s3": "npm run build && aws s3 sync dist/ s3://www.aaronpeltz.com"
+    "dev": "yarn -s && webpack-dev-server --progress --colors",
+    "build": "yarn -s && webpack --progress --colors",
+    "lint": "yarn -s && yarn eslint ./app",
+    "deploy-s3": "yarn -s && yarn build && aws s3 sync dist/ s3://www.aaronpeltz.com"
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"
