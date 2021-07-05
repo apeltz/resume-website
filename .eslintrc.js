@@ -1,3 +1,6 @@
 module.exports = {
-	extends: 'eslint-config-synacor'
+	plugins: [
+		"eslint-plugin-html",
+	],
+	extends: "eslint:recommended",
 };

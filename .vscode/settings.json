@@ -1,0 +1,10 @@
+{
+	"eslint.validate": ["javascript", "html"],
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnType": false,
+	"files.exclude": {
+		"node_modules/": true
+	},
+	"telemetry.enableTelemetry": false,
+	"telemetry.enableCrashReporter": false
+}

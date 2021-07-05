@@ -1,47 +1,56 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
-	entry: [
-		'react-hot-loader/patch',
-		'webpack-dev-server/client?http://localhost:8080',
-		'webpack/hot/only-dev-server',
-		'./src/index.js',
-		'./src/styles/styles.less'
-	],
+	entry: {
+		app: "./src/app/index.js",
+	},
+	mode: "development",
 	module: {
-		loaders: [
-			{ test: /\.js/, loaders: ['babel-loader'], exclude: /node_modules/ },
-			{ test: /\.jsx/, loaders: ['babel-loader'], exclude: /node_modules/ },
+		rules: [
+			{
+				test: /\.js/,
+				use: [{ loader: "babel-loader" }],
+				exclude: /node_modules/,
+			},
+			{
+				test: /\.jsx/,
+				use: [{ loader: "babel-loader" }],
+				exclude: /node_modules/,
+			},
 			{
 				test: /\.less$/,
-				loaders:	[
-					'style-loader',
-					'css-loader?modules&localIdentName=[path][name]__[local]',
-					'less-loader?modules'
-				]
+				use: [
+					{ loader: "style-loader" },
+					{ loader: "css-loader" },
+					{ loader: "less-loader" },
+				],
 			},
-			{ test: /\.json$/, loader: 'json' },
-			{ test: /\.jpe?g$|\.gif$|\.png$|\.ico$/, loader: 'file?name=[name].[ext]' },
-			{ test: /\.eot|\.ttf|\.svg|\.woff2?/, loader: 'file?name=[name].[ext]' }
-		]
+			{ test: /\.json$/, use: [{ loader: "json" }] },
+			{
+				test: /\.jpe?g$|\.gif$|\.png$|\.ico$/,
+				use: [{ loader: "file?name=[name].[ext]" }],
+			},
+			{
+				test: /\.eot|\.ttf|\.svg|\.woff2?/,
+				use: [{ loader: "file?name=[name].[ext]" }],
+			},
+		],
 	},
 	output: {
-		path: path.resolve(__dirname, 'dist'),
-		filename: 'bundle.js',
-		publicPath: '/'
+		path: path.resolve(__dirname, "dist"),
+		filename: "[name].js",
+		publicPath: "/",
 	},
-	devtool: 'inline-source-map',
+	devtool: "source-map",
 	devServer: {
 		hot: true,
-		contentBase: path.resolve(__dirname, 'dist'),
-		publicPath: '/'
+		contentBase: path.resolve(__dirname, "dist"),
+		transportMode: "ws",
+		injectClient: false,
+		disableHostCheck: true,
+		// public: "http://localhost:8080",
+		publicPath: "/",
+		// port: 8080,
 	},
-	plugins: [
-		new webpack.HotModuleReplacementPlugin(),
-		// enable HMR globally
-
-		new webpack.NamedModulesPlugin()
-		// prints more readable module names in the browser console on HMR updates
-	]
 };
