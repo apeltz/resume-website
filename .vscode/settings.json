@@ -1,0 +1,24 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+      // For ESLint
+      "source.fixAll.eslint": true,
+      // For TSLint
+      "source.fixAll.tslint": true,
+      // For Stylelint
+      "source.fixAll.stylelint": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.trailingComma": "es5",
+}

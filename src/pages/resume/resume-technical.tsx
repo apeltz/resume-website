@@ -1,29 +1,33 @@
-import React from 'react';
-
+import { Box } from "@material-ui/core";
+import React from "react";
 
 export const TechnicalSkills: React.FC = () => {
-
-    let skills: Record<string, string> = {
-      Javascript: "%PUBLIC_URL%/logo192.png",
-      NodeJS: "%PUBLIC_URL%/logo192.png",
-      HTML: "%PUBLIC_URL%/logo192.png",
-      CSS: "%PUBLIC_URL%/logo192.png",
-    };
-    let skillsToDOM = Object.keys(skills).map((s, i) => (
-        <div
-          key={'skill-'+i}
-          className='skill-logo'
-        >
-          <img src={skills[s]} alt={`${s} logo`}/>
-          <p>{s}</p>
-        </div>
-    ));
-
-    return (
-      <div id='res-skills'>
-        {skillsToDOM}
-        <p>Javascript, ES6, ReactJS, Redux, AngularJS, PostgreSQL, NodeJS, Express, Git, HTML/CSS, jQuery, Heroku, AWS, RESTful APIs, MongoDB, Bootstrap, TDD (Expect, Mocha, Chai, Sinon), build tools (Browserify, Babel), Python, Django</p>
-      </div>
-    )
-
-}
+  return (
+    <div id="res-skills">
+      <Box>Javascript</Box>
+      <Box>ES6</Box>
+      <Box>ReactJS</Box>
+      <Box>Redux</Box>
+      <Box>AngularJS</Box>
+      <Box>PostgreSQL</Box>
+      <Box>NodeJS</Box>
+      <Box>Express</Box>
+      <Box>Git</Box>
+      <Box>HTML/CSS</Box>
+      <Box>jQuery</Box>
+      <Box>Heroku</Box>
+      <Box>AWS</Box>
+      <Box>RESTful APIs</Box>
+      <Box>MongoDB</Box>
+      <Box>Bootstrap</Box>
+      <Box>Expect</Box>
+      <Box>Mocha</Box>
+      <Box>Chai</Box>
+      <Box>Sinon</Box>
+      <Box>Browserify</Box>
+      <Box>Babel</Box>
+      <Box>Python</Box>
+      <Box>Django</Box>
+    </div>
+  );
+};

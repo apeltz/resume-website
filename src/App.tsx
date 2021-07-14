@@ -1,66 +1,102 @@
-import React from 'react';
-import { Resume } from './pages/resume'
-import avatar from './assets/ap_avatar.jpg';
+import {
+  AppBar,
+  Box,
+  Container,
+  createTheme,
+  Grid,
+  makeStyles,
+  ThemeProvider,
+  Typography,
+} from "@material-ui/core";
+import DescriptionIcon from "@material-ui/icons/Description";
+import HomeIcon from "@material-ui/icons/Home";
+import { ReactElement } from "react";
 import {
   BrowserRouter as Router,
-  Switch,
+  Link,
+  LinkProps,
+  Redirect,
   Route,
-  Link
+  Switch,
 } from "react-router-dom";
-import { AppBar, Avatar, Box, Icon, Grid, Container, ListItem, ListItemIcon, ListItemText, makeStyles, Typography } from '@material-ui/core'
-import DescriptionIcon from '@material-ui/icons/Description';
+import { Resume } from "./pages/resume";
+
+const theme = createTheme({
+  typography: {
+    fontSize: 12,
+    h3: {
+      fontSize: 20,
+    },
+  },
+});
 
 const useStyles = makeStyles(() => ({
   header: {
-     backgroundColor: "royalblue",
-     padding: '1rem',
+    backgroundColor: "royalblue",
+    padding: "1rem",
   },
   navLink: {
-    color: 'white',
-    minWidth: '20px',
-    textDecoration: 'none',
-  }
+    color: "white",
+    minWidth: "20px",
+    textDecoration: "none",
+    marginLeft: "1rem",
+  },
 }));
 
 function App() {
-  const { header, navLink } = useStyles();
+  const { header } = useStyles();
   return (
-    
+    <ThemeProvider theme={theme}>
       <Router>
-        <Container maxWidth="lg">
-
-        <Grid container xs={12} >
-    <Grid item xs={12}>
-
         <AppBar position="static" className={header}>
-
-
-          <Link to="/resume" className={navLink}   >                 
-          <Box display="flex" alignItems='center'>
-                      <DescriptionIcon fontSize="large" />
-                      <Typography style={{ fontSize: 25}}>Resume</Typography>
-
+          <Box display="flex">
+            <NavLink
+              to="/"
+              text="Home"
+              icon={<HomeIcon style={{ fontSize: 25 }} />}
+            />
+            <NavLink
+              to="/resume"
+              text="Resume"
+              icon={<DescriptionIcon style={{ fontSize: 22 }} />}
+            />
           </Box>
-                      </Link>
-
         </AppBar>
-
-
-        <Switch>
-          <Route path="/resume">
-            <Resume />
-          </Route>
-          <Route path="/">
-            <Resume />
-          </Route>
-        </Switch>
-    </Grid>
-
-        </Grid>
+        <Container maxWidth="lg" style={{ padding: 30 }}>
+          <Grid container xs={12}>
+            <Grid item xs={12}>
+              <Switch>
+                <Route path="/resume">
+                  <Resume />
+                </Route>
+                <Route path="/">
+                  <Redirect to="/resume" />
+                </Route>
+              </Switch>
+            </Grid>
+          </Grid>
         </Container>
-    </Router>
+      </Router>
+    </ThemeProvider>
   );
 }
 
 export default App;
 
+const NavLink: React.FC<{
+  to: LinkProps["to"];
+  text: string;
+  icon: ReactElement;
+}> = ({ to, text, icon }) => {
+  const { navLink } = useStyles();
+  return (
+    <Link to={to} className={navLink}>
+      <Box display="flex" alignItems="center">
+        {icon}
+        <Typography style={{ fontSize: 20, paddingTop: 3, marginLeft: 3 }}>
+          {text}
+        </Typography>
+      </Box>
+    </Link>
+  );
+};
