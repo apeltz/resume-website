@@ -27,7 +27,7 @@ export const Resume: React.FC = () => {
 
 const SectionTitle: React.FC<{ text: string }> = ({ text }) => (
   <>
-    <Typography variant="h3" style={{ color: "DarkBlue" }}>
+    <Typography variant="h3" style={{ color: "DarkBlue", marginTop: 25 }}>
       {text}
     </Typography>
     <hr />

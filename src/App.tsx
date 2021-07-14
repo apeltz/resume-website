@@ -62,7 +62,13 @@ function App() {
             />
           </Box>
         </AppBar>
-        <Container maxWidth="lg" style={{ padding: 30 }}>
+        <Container
+          maxWidth="lg"
+          style={{
+            paddingLeft: 20,
+            paddingRight: 20,
+          }}
+        >
           <Grid container xs={12}>
             <Grid item xs={12}>
               <Switch>
