@@ -2,7 +2,6 @@ import {
   AppBar,
   Box,
   Container,
-  createTheme,
   Grid,
   makeStyles,
   ThemeProvider,
@@ -19,20 +18,13 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
+import { About } from "./pages/about";
 import { Resume } from "./pages/resume";
-
-const theme = createTheme({
-  typography: {
-    fontSize: 12,
-    h3: {
-      fontSize: 20,
-    },
-  },
-});
+import { color1, theme } from "./theme";
 
 const useStyles = makeStyles(() => ({
   header: {
-    backgroundColor: "royalblue",
+    backgroundColor: color1,
     padding: "1rem",
   },
   navLink: {
@@ -52,7 +44,7 @@ function App() {
           <Box display="flex">
             <NavLink
               to="/"
-              text="Home"
+              text="About"
               icon={<HomeIcon style={{ fontSize: 25 }} />}
             />
             <NavLink
@@ -62,21 +54,18 @@ function App() {
             />
           </Box>
         </AppBar>
-        <Container
-          maxWidth="lg"
-          style={{
-            paddingLeft: 20,
-            paddingRight: 20,
-          }}
-        >
+        <Container maxWidth="lg">
           <Grid container xs={12}>
-            <Grid item xs={12}>
+            <Grid item xs={12} style={{ paddingTop: 30, paddingBottom: 30 }}>
               <Switch>
+                <Route path="/about">
+                  <About />
+                </Route>
                 <Route path="/resume">
                   <Resume />
                 </Route>
                 <Route path="/">
-                  <Redirect to="/resume" />
+                  <Redirect to="/about" />
                 </Route>
               </Switch>
             </Grid>

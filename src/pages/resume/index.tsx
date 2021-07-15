@@ -1,11 +1,12 @@
-import { Typography } from "@material-ui/core";
-import { ResumeEducation } from "./resume-education";
-import { ResumeExperience } from "./resume-experience";
-import { TechnicalSkills } from "./resume-technical";
+import { Box, Typography } from "@material-ui/core";
+import { ResumeEducation } from "./education";
+import { ResumeExperience } from "./experience";
+import { Personal } from "./personal";
+import { TechnicalSkills } from "./technical";
 
 export const Resume: React.FC = () => {
   return (
-    <div>
+    <Box>
       <SectionTitle text="Technical Skills" />
       <TechnicalSkills />
 
@@ -16,18 +17,14 @@ export const Resume: React.FC = () => {
       <ResumeEducation />
 
       <SectionTitle text="Personal/Interests" />
-      <p>
-        {`Ocean kayaking, beach volleyball, pickup soccer, Texas hold’em,
-					crossword puzzles, acoustic guitar, CodeWars, Project Euler, fantasy
-					sports, video games, board games`}
-      </p>
-    </div>
+      <Personal />
+    </Box>
   );
 };
 
 const SectionTitle: React.FC<{ text: string }> = ({ text }) => (
   <>
-    <Typography variant="h3" style={{ color: "DarkBlue", marginTop: 25 }}>
+    <Typography variant="h3" style={{ marginTop: 30 }}>
       {text}
     </Typography>
     <hr />
