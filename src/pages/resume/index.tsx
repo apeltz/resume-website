@@ -1,4 +1,5 @@
-import { Box, Typography } from "@material-ui/core";
+import { Box } from "@material-ui/core";
+import { SectionTitle } from "../../components/section-title";
 import { ResumeEducation } from "./education";
 import { ResumeExperience } from "./experience";
 import { Personal } from "./personal";
@@ -21,12 +22,3 @@ export const Resume: React.FC = () => {
     </Box>
   );
 };
-
-const SectionTitle: React.FC<{ text: string }> = ({ text }) => (
-  <>
-    <Typography variant="h3" style={{ marginTop: 30 }}>
-      {text}
-    </Typography>
-    <hr />
-  </>
-);

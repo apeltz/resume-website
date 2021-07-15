@@ -44,7 +44,7 @@ function App() {
           <Box display="flex">
             <NavLink
               to="/"
-              text="About"
+              text="Home"
               icon={<HomeIcon style={{ fontSize: 25 }} />}
             />
             <NavLink
@@ -58,14 +58,14 @@ function App() {
           <Grid container xs={12}>
             <Grid item xs={12} style={{ paddingTop: 30, paddingBottom: 30 }}>
               <Switch>
-                <Route path="/about">
+                <Route path="/home">
                   <About />
                 </Route>
                 <Route path="/resume">
                   <Resume />
                 </Route>
                 <Route path="/">
-                  <Redirect to="/about" />
+                  <Redirect to="/home" />
                 </Route>
               </Switch>
             </Grid>
