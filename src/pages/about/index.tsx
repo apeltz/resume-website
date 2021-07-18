@@ -23,7 +23,7 @@ export const About: React.FC = () => {
       <SectionTitle text="About" />
       <Typography paragraph>
         I'm a software engineer dedicated to the creation of powerful and
-        delightful web platforms. My experience to-date has been mostly in
+        delightful web platforms. My experience and focus has been mostly in
         Javascript/Typescript, with an emphasis on font-end frameworks and
         libraries, Node.js, and the broader front-end ecosystem.
       </Typography>

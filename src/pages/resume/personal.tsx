@@ -18,15 +18,15 @@ export const Personal: React.FC = () => {
       flexWrap="wrap"
       style={{ width: "100%" }}
     >
-      <PersonalItem text="Ocean kayaking" icon={<RowingIcon />} />
-      <PersonalItem text="Beach volleyball" icon={<SportsVolleyballIcon />} />
       <PersonalItem text="Pickup soccer" icon={<SportsSoccerIcon />} />
-      <PersonalItem text="Texas Hold'Em" icon={<FavoriteIcon />} />
+      <PersonalItem text="Board games" icon={<CasinoIcon />} />
+      <PersonalItem text="Video games" icon={<SportsEsportsIcon />} />
+      <PersonalItem text="Ocean kayaking" icon={<RowingIcon />} />
+      <PersonalItem text="Fantasy sports" icon={<SportsFootballIcon />} />
+      <PersonalItem text="Beach volleyball" icon={<SportsVolleyballIcon />} />
+      <PersonalItem text="Texas Hold'em" icon={<FavoriteIcon />} />
       <PersonalItem text="Crossword puzzles" icon={<SpellcheckIcon />} />
       <PersonalItem text="Acoustic guitar" icon={<MusicNoteIcon />} />
-      <PersonalItem text="Fantasy sports" icon={<SportsFootballIcon />} />
-      <PersonalItem text="Video games" icon={<SportsEsportsIcon />} />
-      <PersonalItem text="Board games" icon={<CasinoIcon />} />
     </Box>
   );
 };

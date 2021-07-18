@@ -43,8 +43,7 @@ const experiences: Experience[] = [
     logo: LogoSynacor,
     bullets: [
       `Built high-volume, scalable web applications that delivered personalized news, information, and entertainment across desktop and mobile browsers`,
-      `Used modern frontend frameworks to create re-usable and customizable components as part of modular, component-based architecture`,
-      `Adhered to company’s strong code maintainability policy through combination of TDD and unit-based testing`,
+      `Used modern frontend frameworks to create reusable and customizable components as part of modular, component-based architecture`,
     ],
   },
   {
@@ -110,7 +109,7 @@ const ExperienceComponent: React.FC<Experience> = ({
           {company}
         </Typography>
       </Box>
-      <Box display="flex" alignItems="end" style={{ marginTop: 5 }}>
+      <Box display="flex" alignItems="end" style={{ marginTop: 10 }}>
         <Box display="flex" alignItems="end" flexGrow={1}>
           <Typography variant="h5" style={{ fontStyle: "italic" }}>
             {role}
