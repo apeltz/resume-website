@@ -30,12 +30,12 @@ export const About: React.FC = () => {
       <SectionTitle text="Contact" />
       <Box display="flex">
         <ContactLink
-          href="linkedin.com/in/apeltz/"
+          href="https://linkedin.com/in/apeltz/"
           icon={<LinkedInIcon />}
           text="LinkedIn"
         />
         <ContactLink
-          href="github.com/apeltz"
+          href="https://github.com/apeltz"
           icon={<GitHubIcon />}
           text="Email"
         />
