@@ -96,18 +96,21 @@ const ExperienceComponent: React.FC<Experience> = ({
 }) => (
   <>
     <Box>
-      <Box
-        style={{ backgroundColor: color4, padding: 5 }}
-        display="flex"
-        alignItems="center"
-      >
-        <Avatar src={logo} variant="square" style={{ width: 25, height: 25 }} />
-        <Typography
-          variant="h5"
-          style={{ color: color1, fontWeight: "bold", marginLeft: 5 }}
+      <Box display="flex" alignItems="center">
+        <Avatar src={logo} variant="square" style={{ width: 30, height: 30 }} />
+        <Box
+          style={{ backgroundColor: color4, padding: 5, marginLeft: 5 }}
+          display="flex"
+          alignItems="center"
+          flexGrow={1}
         >
-          {company}
-        </Typography>
+          <Typography
+            variant="h5"
+            style={{ color: color1, fontWeight: "bold", marginLeft: 5 }}
+          >
+            {company}
+          </Typography>
+        </Box>
       </Box>
       <Box display="flex" alignItems="end" style={{ marginTop: 10 }}>
         <Box display="flex" alignItems="end" flexGrow={1}>
